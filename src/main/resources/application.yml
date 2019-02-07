@@ -7,9 +7,13 @@ spring:
 spring:
   profiles: local
   datasource:
-    url: jdbc:mysql://localhost:3306/vakha_blog?useSSL=false&serverTimezone=UTC
-    username: root
-    password: qwe123
+#    url: jdbc:mysql://localhost:3306/vakha_blog?useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: qwe123
+    url: jdbc:h2:~/test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
   devtools:
     livereload:
       enabled: true
