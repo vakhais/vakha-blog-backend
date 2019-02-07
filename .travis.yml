@@ -52,3 +52,7 @@ notifications:
   email:
     recipients:
       - bestcure9@gmail.com
+  slack:
+    rooms:
+      - vakha:MP7PAfpCi84lDDPAePCRo1qE#general
+      - vakha:MP7PAfpCi84lDDPAePCRo1qE#vakha-blog-making
