@@ -1,7 +1,5 @@
 package com.vakha.blog.webservice.web;
 
-import com.vakha.blog.webservice.dto.posts.PostsSaveRequestDto;
-import com.vakha.blog.webservice.domain.posts.PostsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +13,7 @@ import java.util.Arrays;
 @AllArgsConstructor
 public class WebRestController {
 
-    private PostsRepository postsRepository;
+    //private PostsRepository postsRepository;
     private Environment env;
 
     @GetMapping("/hello")
@@ -23,10 +21,10 @@ public class WebRestController {
         return "HelloWorld";
     }
 
-    @PostMapping("/posts")
-    public void savePosts(@RequestBody PostsSaveRequestDto dto){
-        postsRepository.save(dto.toEntity());
-    }
+//    @PostMapping("/posts")
+//    public void savePosts(@RequestBody PostsSaveRequestDto dto){
+//        postsRepository.save(dto.toEntity());
+//    }
 
     @GetMapping("/profile")
     public String getProfile () {

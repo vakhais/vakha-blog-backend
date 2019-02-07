@@ -1,0 +1,39 @@
+GET https://www.devbeginner.com
+
+###
+
+# vk blog rest test
+POST http://localhost:8080/auth/signup/
+Content-Type: application/json
+
+{
+  "name": "park hyun jin",
+  "email": "bestcure9@gmail.com",
+  "password": "qwe123"
+}
+
+###
+
+POST http://localhost:8080/auth/login/
+Content-Type: application/json
+
+{
+  "email": "bestcure@naver.com",
+  "password": "qwe123"
+}
+
+###
+
+GET http://localhost:8080/api/categorys
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/posts/category/1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/profile
+
+###
