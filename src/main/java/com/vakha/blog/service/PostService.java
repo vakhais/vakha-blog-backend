@@ -48,7 +48,8 @@ public class PostService {
         User user = userRepository.getOne(currentUser.getId());
         newPost.setUser(user);
 
-        Category category = categoryRepository.getOne(postDto.getCategoryId());
+        //Category category = categoryRepository.getOne(postDto.getCategoryId());
+        Category category = categoryRepository.findByNm(postDto.getCategoryNm());
         newPost.setCategory(category);
         System.out.println("AAAAAAAAAAAAAAAAAA:" + category.toString());
 

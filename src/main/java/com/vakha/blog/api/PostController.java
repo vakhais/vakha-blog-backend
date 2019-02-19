@@ -50,6 +50,7 @@ public class PostController {
 //    public ResponseEntity<?> getPostsByCategoryNm(@PathVariable String name, Pageable pageable) {
 //        Page<Post> posts = postService.findForCategoryNmOrderByCreatedDateDescPageable(name, pageable);
 //        Page<PostDto> postDto = posts.map(post -> new PostDto(post));
+//        System.out.println("test123333:"+ posts.toString());
 //        return new ResponseEntity<>(postDto.getContent(), HttpStatus.OK);
 //    }
 

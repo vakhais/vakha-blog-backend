@@ -48,6 +48,7 @@ public class Post {
     private Set<Comment> comments;
 
     @ManyToOne
+    @JsonManagedReference
     @JoinColumn(name = "category_Nm", referencedColumnName = "category_nm", nullable = false)
     private Category category;
 
